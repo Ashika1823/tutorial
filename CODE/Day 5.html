@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Login Page</h1>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" minlength="3" required placeholder="Enter Your Name">
+
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="M"> Male
+        <input type="radio" name="gender" value="F"> Female
+        <input type="radio" name="gender" value="O"> Others
+        <br><br>
+
+        <label for="gmail">Gmail:</label>
+        <input type="email" id="gmail" name="email" placeholder="Enter your Email">
+
+        <label for="tel">Phone:</label>
+        <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+
+        <label>Position Applied</label>
+        <select>
+            <option value="">--select--</option>
+            <option value="FD">Frontend Developer</option>
+            <option value="BD">Backend Developer</option>
+            <option value="SD">Software Developer</option>
+            <option value="UIUX">UI/UX Developer</option>
+        </select>
+
+        <input type="text" readonly placeholder="Avoid Fake Information">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+
+        <label for="cv">CV:</label>
+        <input type="file" name="cv" id="cv">
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

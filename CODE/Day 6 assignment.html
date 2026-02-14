@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Information Portal</title>
+  </head>
+
+  <body id="top" class="portal-body" title="Student Portal Page">
+    <header id="header" class="main-header">
+      <h1>Student Information Portal</h1>
+      <p><strong>Welcome</strong> to the <em>Student Portal</em></p>
+    </header>
+    <nav id="nav" class="navigation" title="Main Navigation">
+      <a href="#about">About</a> | <a href="#register">Register</a> |
+      <a href="#students">Students</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+    <main id="main-content">
+      <section id="about" class="section-about">
+        <h2>About Portal</h2>
+        <p>
+          This portal helps <mark>students</mark> manage their
+          <strong>information</strong>, <em>activities</em>, and
+          <small>academic details</small>.
+        </p>
+        <img
+          src="../File/WhatsApp Image 2025-06-17 at 8.42.46 PM (2).jpeg"
+          alt="Student Image"
+          title="Sample Student"
+          width="200"
+        />
+      </section>
+      <section id="register" class="section-register">
+        <h2>Student Registration Form</h2>
+
+        <form action="#" method="post">
+          <label for="name">Full Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+            minlength="6"
+          /><br /><br />
+
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <label>Gender:</label><br />
+          <input type="radio" name="gender" value="male" required /> Male
+          <input type="radio" name="gender" value="female" /> Female<br /><br />
+
+          <label for="course">Course:</label><br />
+          <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option>IT</option>
+            <option>CSE</option>
+            <option>ECE</option></select
+          ><br /><br />
+
+          <label for="bio">Short Bio:</label><br />
+          <textarea
+            id="bio"
+            name="bio"
+            placeholder="Write about yourself"
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Register" />
+          <input type="reset" value="Clear" />
+        </form>
+      </section>
+      <section id="students" class="section-students">
+        <h2>Student Details</h2>
+
+        <table border="1" title="Student Table">
+          <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td>Ashika</td>
+            <td>IT</td>
+            <td>ashika@email.com</td>
+          </tr>
+          <tr>
+            <td>Rahul</td>
+            <td>CSE</td>
+            <td>rahul@email.com</td>
+          </tr>
+        </table>
+      </section>
+      <section id="hobbies" class="section-hobbies">
+        <h2>Hobbies & Activities</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>Reading</li>
+          <li>Playing Games</li>
+          <li>Music</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+          <li>Morning Exercise</li>
+          <li>Study</li>
+          <li>Project Work</li>
+        </ol>
+      </section>
+      <section id="media" class="section-media">
+        <h2>Campus Introduction Video</h2>
+
+        <iframe
+          width="400"
+          height="250"
+          src=""
+          title="Self intro"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+    </main>
+    <footer id="contact" class="main-footer">
+      <p>
+        &copy; 2026 Student Portal |
+        <a href="#top">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>

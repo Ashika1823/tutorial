@@ -1,0 +1,13 @@
+const element = document.getElementById("msg")
+const classElement = document.getElementById("intro")
+const tagElement = document.getElementsByTagName("p")
+console.log("element:" + element)
+console.log("classElement:" + classElement)
+console.log("tagElement:" + tagElement)
+
+let idQuerry = document.querySelector("#msg")
+let classQuerry = document.querySelector(".intro")
+let classQuerryAll = document.querySelectorAll(".intro")
+console.log("idQuerry:"+ idQuerry)
+console.log("classQuerry:"+ classQuerry)
+console.log("classQuerryAll:"+ classQuerryAll)

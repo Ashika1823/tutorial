@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <input type="text" onchange="namechange(this.value)" />
+    <button onclick="sayhello">click me</button>
+
+    <form action="" id="form">
+      <input type="text" placeholder="email" />
+      <input type="text" placeholder="password" />
+      <button type="submit">submit</button>
+    </form>
+
+    <script>
+      const sayhello = () => {
+        alert("hello all");
+      };
+      const namechange = (value) => {
+        console.log(value);
+      };
+      let form = document.getElementById("form");
+      console.log("form");
+      form.addEventListener("sumbit", (e)=>{
+        e.preventDefault()
+        console.log(e.target.email.value)
+        console.log(e.target.password.value)
+        // template literal
+        alert(`your email: ${e.target.email.value} and your password is: ${e.target.password.value}`)
+      })
+      
+      console.log("Start")
+      setTimeout(()=>{
+        console.log("End")
+      },2000)
+    </script>
+  </body>
+</html>

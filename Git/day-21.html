@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // map Function(loop)
+      let arr1 = [1,2,3,4];
+      let addPlus2 = arr1.map((plus)=>plus + 2); //add 2
+      let double = arr1.map(x =>x *2);
+      console.log(addPlus2);
+      console.log(double);
+
+      let arr2 = [10,20,30];
+      let divides = arr2.map(div => div / 10);
+      console.log("divides the list "+ divides );
+
+      // Filter(condition)
+      let lessThan3 = arr1.filter((y)=> y < 3 );
+      console.log(lessThan3);
+
+      // Find
+      // Create an array [3, 6, 9, 12, 15].find the  double of numbers greater than 6.
+      let array11 = [1,2,3,4,6,8,9,7];
+      let result = array11.filter((a)=> a<6).map((b)=>b*2);
+      console.log(result);
+
+      // reducer
+      let sumOfElement = array11.reduce((accumplator, element)=>accumplator + element);
+      console.log("Reduce function : "+sumOfElement);
+
+      let product = array11.reduce((product, n) => product * 2);
+      console.log("product :" + product);
+
+      // Find index
+      let array12 = ["Apple", "Banana", "Graphs"];
+      console.log("Find the index : "+array12.indexOf("Apple"));
+      console.log("Check the element in array : "+array12.includes("Banana"))
+
+      //
+      if(!array12.includes("Cherry")){
+          array12.push("Cherry")
+      }
+      console.log(array12);
+
+      // slice
+      let array13 = [5,10,15,20,25]
+      console.log(array13.slice(1,4));
+
+      // splice(Remove the element)
+      let array14 = [5,10,15,20,25]
+      array14.splice(0,3);
+      console.log(array14);
+
+      object(Its a data type and its stored in key value pairs)
+      let arr = [1,4,5,7,9];
+      console.log(typeof(arr));
+
+      const person ={
+          name : "Ashika",
+          age : 22,
+          city : "chennai"
+      }
+      console.log(person);
+      console.log(person.name);//dot notation (object.key= value)
+      console.log(person["age"]); //bracket notation
+
+      // add
+      person.gender = "Female";
+      console.log(person);
+
+      // Update
+      person.age = 23;
+      console.log(person);
+
+      //delete
+      delete person.city;
+      console.log(person);
+
+      // /loop in object
+      for (let key in person){
+          console.log(key +": " + person[key]);
+      }
+      // methods
+      const student ={
+          Name : "Ajay",
+          subject : ["maths", "science"],
+          Marks : {
+              maths : 56,
+              science : 89
+          },
+          msg : function(){
+              console.log("Hello your mark is here... " + this.maths) //this - represent the current object
+          }
+      };
+      student.msg()
+      console.log(student.Marks.maths)
+      // utilities
+      console.log(Object.keys(student));
+      console.log(Object.values(student));
+      console.log(Object.entries(student));
+      // 1.
+      const book = {
+        title: "Don Quixote",
+        author: "Miguel de Cervantes",
+        pages: 80,
+      };
+      console.log(book.title);
+      console.log(book["author"]);
+
+      // 2.
+      const properties = {
+        name: "Suji",
+        age: 22,
+      };
+      properties.email = "suji24@gmail.com";
+      properties.age = 23;
+      console.log(properties.email);
+      console.log(properties.age);
+
+      // 3.
+      let student = {
+        maths: 80,
+        science: 75,
+        english: 90,
+      };
+
+      for (let subject in student) {
+        console.log(subject + " : " + student[subject]);
+      }
+
+      // 4.
+      let calculator = {
+        add: function (a, b) {
+          return a + b;
+        },
+
+        sub: function (a, b) {
+          return a - b;
+        },
+      };
+      console.log("Addition:", calculator.add(10, 5));
+      console.log("Subtraction:", calculator.sub(10, 5));
+
+      // 5.
+      let employee = {
+        name: "Ashi",
+        salary: 30000,
+
+        details: function () {
+          console.log("Name: " + this.name + ", Salary: " + this.salary);
+        },
+      };
+      employee.details();
+
+      // 6.
+      let mobile = {
+        brand: "Samsung",
+        model: "Galaxy S23",
+        price: 75000,
+      };
+
+      console.log(Object.keys(mobile));
+      console.log(Object.values(mobile));
+      console.log(Object.entries(mobile));
+    </script>
+  </head>
+  <body></body>
+</html>
